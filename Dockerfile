@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic
+FROM ghcr.io/linuxserver/baseimage-ubuntu:focal
 
 # set version label
 ARG BUILD_DATE
@@ -62,4 +62,4 @@ RUN \
 COPY /root /
 
 # ports and volumes
-EXPOSE 51820/udp
+EXPOSE 3000/udp
