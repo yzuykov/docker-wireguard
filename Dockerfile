@@ -62,4 +62,4 @@ RUN \
 COPY /root /
 
 # ports and volumes
-EXPOSE 3000/udp
+EXPOSE 2370/udp
