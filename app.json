@@ -1,0 +1,8 @@
+{
+  "name": "PaaS_WG",
+  "description": "PaaS Wireguard Setup",
+  "keywords": ["PaaS", "Headless", "Wireguard"],
+  "website": "",
+  "repository": "https://github.com/MOOGAA/docker-wireguard/",
+  "stack": "container"
+ }
