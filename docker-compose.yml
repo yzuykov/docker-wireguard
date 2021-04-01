@@ -1,7 +1,7 @@
 version: "0.5"
 services:
   WG_PaaS:
-    image: linuxserver/wireguard
+    build: .
     container_name: WG_PaaS
     cap_add:
       - NET_ADMIN
