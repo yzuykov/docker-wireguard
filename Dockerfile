@@ -60,7 +60,6 @@ RUN \
 
 # add local files
 COPY /root /
-COPY /config /config
 
 # ports and volumes
 EXPOSE 2370/udp
