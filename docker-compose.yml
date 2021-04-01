@@ -13,7 +13,7 @@ services:
       - SERVERURL=<appname>.herokuapp.com #optional
       - SERVERPORT=2370 #optional
       - PEERS=1 #optional
-      - PEERDNS=auto #optional
+      - PEERDNS=1.1.1.1 #optional
       - INTERNAL_SUBNET=3.7.9.0 #optional
     volumes:
       - config/:/config
