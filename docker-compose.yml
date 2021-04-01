@@ -9,7 +9,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/London
+      - TZ=Asia/Kolkata
       - SERVERURL=<appname>.herokuapp.com #optional
       - SERVERPORT=2370 #optional
       - PEERS=1 #optional
