@@ -1,8 +1,8 @@
-version: "2.1"
+version: "0.5"
 services:
-  wireguard:
+  WG_PaaS:
     image: linuxserver/wireguard
-    container_name: wireguard_heroku
+    container_name: WG_PaaS
     cap_add:
       - NET_ADMIN
       - SYS_MODULE
