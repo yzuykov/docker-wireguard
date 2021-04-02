@@ -20,6 +20,5 @@ build:
       - /lib/modules:/lib/modules
     ports:
       - 2370:2370/udp
-    sysctls:
-      - net.ipv4.conf.all.src_valid_mark=1
+    sysctls: net.ipv4.conf.all.src_valid_mark=1
     restart: unless-stopped
