@@ -6,8 +6,8 @@ build:
       - NET_ADMIN
       - SYS_MODULE
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=38627
+      - PGID=38627
       - TZ=Asia/Kolkata
       - SERVERURL=wg-t1.herokuapp.com #optional
       - SERVERPORT=2370 #optional
