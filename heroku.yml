@@ -1,6 +1,5 @@
-version: "2.1"
-services:
-  wireguard:
+build:
+  docker:
     image: ghcr.io/linuxserver/wireguard
     container_name: wireguard
     cap_add:
@@ -17,7 +16,7 @@ services:
       - INTERNAL_SUBNET=3.7.9.0 #optional
       - ALLOWEDIPS=0.0.0.0/0 #optional
     volumes:
-      - /config:/config
+      - ./config:/config
       - /lib/modules:/lib/modules
     ports:
       - 2370:2370/udp
