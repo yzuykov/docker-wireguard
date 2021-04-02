@@ -3,8 +3,8 @@ build:
     image: ghcr.io/linuxserver/wireguard
     container_name: wireguard
     cap_add:
-      - NET_ADMIN
-      - SYS_MODULE
+      NET_ADMIN
+      SYS_MODULE
     environment:
       PUID=38627
       PGID=38627
