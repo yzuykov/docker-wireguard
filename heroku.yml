@@ -6,19 +6,19 @@ build:
       - NET_ADMIN
       - SYS_MODULE
     environment:
-      - PUID=38627
-      - PGID=38627
-      - TZ=Asia/Kolkata
-      - SERVERURL=wg-t1.herokuapp.com #optional
-      - SERVERPORT=2370 #optional
-      - PEERS=1 #optional
-      - PEERDNS=auto #optional
-      - INTERNAL_SUBNET=3.7.9.0 #optional
-      - ALLOWEDIPS=0.0.0.0/0 #optional
+      PUID=38627
+      PGID=38627
+      TZ=Asia/Kolkata
+      SERVERURL=wg-t1.herokuapp.com #optional
+      SERVERPORT=2370 #optional
+      PEERS=1 #optional
+      PEERDNS=auto #optional
+      INTERNAL_SUBNET=3.7.9.0 #optional
+      ALLOWEDIPS=0.0.0.0/0 #optional
     volumes:
-      - ./config:/config
-      - /lib/modules:/lib/modules
+      ./config:/config
+      /lib/modules:/lib/modules
     ports:
-      - 2370:2370/udp
+      2370:2370/udp
     sysctls: net.ipv4.conf.all.src_valid_mark=1
     restart: unless-stopped
