@@ -30,7 +30,7 @@ apk add -U \
 apk -qq update ; \
 ###
 
-COPY /config/ ./config/
+COPY /config ./config
 
 RUN \
 ip link add dev ${INTERFACE_NAME} type wireguard
