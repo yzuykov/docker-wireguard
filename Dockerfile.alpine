@@ -38,6 +38,6 @@ ip address add dev ${INTERFACE_NAME} ${ADDRESS/SUB_NET}
 ip link set up dev ${INTERFACE_NAME}
 ###
 
-RUN rclone copy -vP . /etc/wireguard/
+RUN rclone copy -vP ./config/ /etc/wireguard/
 
 
