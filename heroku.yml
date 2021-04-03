@@ -1,19 +1,5 @@
 build:
   docker:
     worker: Dockerfile
-    cap_add:
-      NET_ADMIN
-      SYS_MODULE
-    environment:
-      PUID=38627
-      PGID=38627
-      TZ=Asia/Kolkata
-      SERVERURL=auto
-      SERVERPORT=2370
-      PEERS=1
-      PEERDNS=1.1.1.1
-      INTERNAL_SUBNET=3.7.9.0
     ports:
       2370:2370/udp
-    sysctls:
-      net.ipv4.conf.all.src_valid_mark=1
