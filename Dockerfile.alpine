@@ -22,7 +22,7 @@ apk -qq upgrade
 ###
 
 RUN \
-apk add -U \
+apk -qq add -U \
   build-essential \
   curl \
   htop \
