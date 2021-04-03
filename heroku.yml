@@ -9,7 +9,7 @@ build:
       PUID=38627
       PGID=38627
       TZ=Asia/Kolkata
-      SERVERURL=wg-t1.herokuapp.com #optional
+      SERVERURL=auto
       SERVERPORT=2370 #optional
       PEERS=1 #optional
       PEERDNS=auto #optional
@@ -21,4 +21,3 @@ build:
     ports:
       2370:2370/udp
     sysctls: net.ipv4.conf.all.src_valid_mark=1
-    restart: unless-stopped
