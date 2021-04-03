@@ -16,8 +16,10 @@ apk add -U \
   neofetch \
   curl \
   wget \
+  htop \
   nano \
   ufw \
+  rclone \
   iptables \
   wireguard-tools \
   nginx
