@@ -1,4 +1,4 @@
-version: "0.5"
+version: "2.1"
 services:
   WG_PaaS:
     build: .
