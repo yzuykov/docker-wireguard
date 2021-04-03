@@ -1,8 +1,6 @@
-version: "2.1"
-services:
-  WG_PaaS:
-    build: .
-    container_name: WG_PaaS
+build:
+  docker:
+    worker: Dockerfile
     cap_add:
       NET_ADMIN
       SYS_MODULE
