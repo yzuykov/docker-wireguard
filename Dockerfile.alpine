@@ -1,0 +1,24 @@
+FROM alpine:latest
+
+
+WORKDIR /home/app/config/
+
+
+
+RUN \
+apk -qq update ; \
+apk -qq upgrade
+###
+
+RUN \
+apk add -U \
+  sudo \
+  neofetch \
+  curl \
+  wget \
+  nano \
+  ufw \
+  iptables ; \
+apk -qq add -U wireguard-tools ; \
+apk -qq add -U nginx
+###
