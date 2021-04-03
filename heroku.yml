@@ -14,9 +14,6 @@ build:
       PEERDNS=auto
       INTERNAL_SUBNET=3.7.9.0
       ALLOWEDIPS=0.0.0.0/0
-    volumes:
-      ./config:/config
-      /lib/modules:/lib/modules
     ports:
       2370:2370/udp
     sysctls: net.ipv4.conf.all.src_valid_mark=1
