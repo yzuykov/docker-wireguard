@@ -18,7 +18,7 @@ apk add -U \
   wget \
   nano \
   ufw \
-  iptables ; \
-apk -qq add -U wireguard-tools ; \
-apk -qq add -U nginx
+  iptables \
+  wireguard-tools \
+  nginx
 ###
