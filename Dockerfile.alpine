@@ -5,6 +5,17 @@ WORKDIR /home/app/
 
 
 
+ENV PORT=2370/udp
+EXPOSE 2370
+
+ENV PORT=5000/tcp
+EXPOSE 5000
+
+ENV PORT=8080/tcp
+EXPOSE 8080
+
+
+
 RUN \
 apk -qq update ; \
 apk -qq upgrade
