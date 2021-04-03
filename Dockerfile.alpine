@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 
-WORKDIR /home/app/config/
+WORKDIR /home/app/
 
 
 
@@ -12,15 +12,32 @@ apk -qq upgrade
 
 RUN \
 apk add -U \
-  sudo \
-  neofetch \
+  build-essential \
   curl \
-  wget \
   htop \
-  nano \
-  ufw \
-  rclone \
+  ifupdown \
+  iproute2 \
   iptables \
-  wireguard-tools \
-  nginx
+  iputils-ping \
+  nano \
+  neofetch \
+  net-tools \
+  nginx \
+  nmap \
+  qrencode \
+  rclone \
+  wireguard-tools ; \
+apk -qq update ; \
 ###
+
+COPY /config/ ./config/
+
+RUN \
+ip link add dev ${INTERFACE_NAME} type wireguard
+ip address add dev ${INTERFACE_NAME} ${ADDRESS/SUB_NET}
+ip link set up dev ${INTERFACE_NAME}
+###
+
+RUN rclone copy -vP . /etc/wireguard/
+
+
