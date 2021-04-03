@@ -1,7 +1,6 @@
 build:
   docker:
     worker: Dockerfile123
-    container_name: wireguard
     cap_add:
       NET_ADMIN
       SYS_MODULE
