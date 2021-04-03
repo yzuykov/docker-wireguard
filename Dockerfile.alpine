@@ -38,7 +38,7 @@ apk -qq add -U \
   qrencode \
   rclone \
   wireguard-tools ; \
-apk -qq update ; \
+apk -qq update
 ###
 
 COPY /config ./config
