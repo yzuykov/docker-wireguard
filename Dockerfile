@@ -61,5 +61,6 @@ RUN \
 # add local files
 COPY /root /
 
+
 # ports and volumes
-EXPOSE 2370/udp
+ENV PORT=2370/udp
