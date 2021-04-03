@@ -1,5 +1,3 @@
 build:
   docker:
     worker: Dockerfile
-    ports:
-      2370:2370/udp
