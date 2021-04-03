@@ -1,6 +1,6 @@
 build:
   docker:
-    image: ghcr.io/linuxserver/wireguard
+    worker: Dockerfile123
     container_name: wireguard
     cap_add:
       NET_ADMIN
