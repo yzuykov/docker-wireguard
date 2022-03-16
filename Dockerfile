@@ -60,7 +60,7 @@ RUN \
 
 # add local files
 COPY /root /
-COPY /lib/modules /lib/modules
+# COPY /lib/modules /lib/modules
 
 
 # ports and volumes
